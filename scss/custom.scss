@@ -1,0 +1,176 @@
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+
+:root {
+    --body-primary: #f0f0f0;
+    --color-text: #121212;
+    --color-button: #E4C1AE;
+    --font-roboto: "Roboto";
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--body-primary);
+}
+
+.card {
+    height: 40.8;
+    margin: 10rem -1.5rem;
+    border: 0;
+    font-style: var(--font-roboto);
+
+
+    &-img-top {
+        width: 50%;
+        // object-fit: cover;
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 8.6rem 11rem 6.9rem 11rem;
+        background-color: var(--white);
+    }
+
+    &-title {
+        text-align: left;
+        font: Bold 4.2rem var(--font-roboto);
+        letter-spacing: 0px;
+        color: var(--color-text);
+        margin-bottom: 4.3rem;
+    }
+
+    &-text {
+        text-align: left;
+        font: 300 1.6rem Roboto;
+        line-height: 2.6rem;
+        letter-spacing: 0px;
+        color: var(--color-text);
+        margin-bottom: 3.5rem;
+    }
+}
+
+
+.btn {
+    align-self: flex-end;
+    background: var(--color-button) 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: Bold 1.6rem Roboto;
+    letter-spacing: 0px;
+    border-radius: 5rem;
+    width: 13.5rem;
+    height: 4.7rem;
+    color: var(--white);
+    border: none;
+
+}
+
+/////////////////////////////////////////////////
+//MEDIA QUERY
+@media (max-width: 1199.98px) {
+    html {
+        font-size: 9px;
+    }
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    html {
+        font-size: 8px;
+    }
+
+    .card {
+        &-body {
+            padding: 5rem;
+        }
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    html {
+        font-size: 7px;
+    }
+
+    .card {
+        height: auto;
+
+        &-img-top {
+            object-fit: cover;
+        }
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 8px;
+    }
+
+    .card {
+        margin: 0 -15px;
+        border: 0;
+        min-width: 320px;
+
+        &-img-top {
+            width: 100%;
+        }
+
+        &-body {
+            padding: 5rem;
+        }
+    }
+
+
+}
